@@ -1,47 +1,19 @@
-/* common */
-/* small screen */
-body{
-  margin:0;
-}
-
-aside{
-  display: none;
-}
-
-.image{
-  background:pink;
-  height: 100px;
-}
-
-.text{
-  background: gray;
-  height: 100px;
-}
-
-/* medium screen */
-@media (min-width:600px) {
-  section{
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  }
-
-  .image{
-    width: 200px;
-  }
-
-  .text{
-    flex: 1;
-  }
+  width: 100%;
+  background: black;
+  color: white;
 }
 
-/* large screen */
-@media (min-width:800px) {
-  section{
-    width: 800px;
-    margin: 0 auto;
-  }
-  aside{
-    display: block;
-    background: plum;
-    width: 160px;
-  }
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=styles.css.map */
