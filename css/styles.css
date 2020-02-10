@@ -191,5 +191,25 @@ a {
   background: lightgray;
   width: 100%;
   padding: 50px 0 100px;
+  color: grey;
+}
+
+.footer__box {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__box--logo {
+  margin-right: 30px;
+  font-size: 40px;
+}
+
+.footer__box--support {
+  padding-left: 6px;
+  margin-top: 6px;
+  border-left: 2px grey solid;
 }
 /*# sourceMappingURL=styles.css.map */
