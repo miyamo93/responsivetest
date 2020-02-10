@@ -2,6 +2,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
   background: black;
@@ -70,12 +74,35 @@ li {
   margin-top: 48px;
 }
 
+.left-column a {
+  color: black;
+}
+
+.left-column li {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.left-column h2 {
+  line-height: 2;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+
 .right-box {
   margin: 20px auto 0;
   width: 750px;
 }
 
+.right-box__main {
+  height: 1800px;
+  overflow: auto;
+}
+
 .right-box h2 {
+  margin-bottom: 20px;
   text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

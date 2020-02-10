@@ -1,7 +1,9 @@
 li{
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 
 
 
@@ -62,12 +64,32 @@ li{
 .left-column{
   width: 200px;
   margin-top: 48px;
+  a{
+    color: black;
+  }
+  li{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  h2{
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    border-bottom:1px black solid ;
+  }
 }
 
 .right-box{
   margin: 20px auto 0;
   width: 750px;
-  h2{
-    text-align: center;
+  &__main{
+    height: 1800px;
+    overflow: auto;
   }
+  h2{
+
+    margin-bottom: 20px;
+    text-align: center;
+  } 
 }
