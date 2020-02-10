@@ -21,6 +21,11 @@ a {
   margin: 0 auto;
 }
 
+.header__box--logo {
+  font-size: 40px;
+  line-height: 120px;
+}
+
 .header a {
   color: white;
 }
@@ -211,5 +216,9 @@ a {
   padding-left: 6px;
   margin-top: 6px;
   border-left: 2px grey solid;
+}
+
+.footer a {
+  color: gray;
 }
 /*# sourceMappingURL=styles.css.map */

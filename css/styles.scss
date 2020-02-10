@@ -18,6 +18,10 @@ a{
     width: 1000px;
     height: 120px;
     margin: 0 auto;
+    &--logo{
+      font-size: 40px;
+      line-height: 120px;
+    }
   }
   a{
     color: white;
@@ -178,5 +182,8 @@ a{
       margin-top: 6px;
       border-left: 2px grey solid;
     }
+  }
+  a{
+    color: gray;
   }
 }
