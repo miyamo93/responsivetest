@@ -144,3 +144,24 @@ a{
     text-align: center;
   } 
 }
+.lower-bunner{
+  width: 100%;
+  margin: 50px 0;
+  padding: 55px;
+  border-top: 1px solid black;
+  &__box{
+    margin: 0 auto;
+    height: 100px;
+    width: 400px;
+    background-color: lightgreen;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+.footer{
+  background: lightgray;
+  width: 100%;
+  padding: 50px 0 100px;
+}
