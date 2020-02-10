@@ -1,3 +1,11 @@
+li{
+  list-style: none;
+}
+
+
+
+
+// ヘッダー
 
 .header{
   width: 100%;
@@ -17,13 +25,14 @@
     display: flex;
   }
   li{
-    list-style: none;
     margin-right:8px;
   }
   form{
     line-height: 120px;
   }
 }
+
+//スライダー
 
 #slider{
   height: 422px;
@@ -37,5 +46,28 @@
     width: 1000px;
     height: 44px;
     margin: 0 auto;
+  }
+}
+
+// メイン
+
+.main{
+  width: 100%;
+  &__box{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.left-column{
+  width: 200px;
+  margin-top: 48px;
+}
+
+.right-box{
+  margin: 20px auto 0;
+  width: 750px;
+  h2{
+    text-align: center;
   }
 }
