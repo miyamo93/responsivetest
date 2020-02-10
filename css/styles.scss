@@ -64,8 +64,59 @@ a{
 .left-column{
   width: 200px;
   margin-top: 48px;
+  .side-new{
+    height: 200px;
+    width: 200px;
+    background: black;
+    text-align: center;
+    position: relative;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    &:hover{
+      opacity: 0.5;
+    }
+    a{
+      line-height:200px ;
+      position: absolute;
+      color: white;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    p{
+      line-height: 200px;
+      color: white;
+    }
+  }
+  .side-cart{
+    padding: 20px;
+    background-color: lightgray;
+    p{
+      text-align: center;
+      line-height: 1.5;
+      font-size: 12px;
+    }
+    .cart-button{
+      margin-top: 7px;
+      text-align: center;
+      i{
+        background-color: gray;
+        padding: 3px 10px;
+        font-size: 12px;
+      }
+    }
+  }
   a{
     color: black;
+    transition: 0.8s;
+    &:hover{
+      color: lightgray;
+    }
+  }
+  ul{
+    margin-top: 15px;
+    padding-left: 16px;
   }
   li{
     font-size: 14px;

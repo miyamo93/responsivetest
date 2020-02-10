@@ -74,8 +74,71 @@ a {
   margin-top: 48px;
 }
 
+.left-column .side-new {
+  height: 200px;
+  width: 200px;
+  background: black;
+  text-align: center;
+  position: relative;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  margin-bottom: 20px;
+}
+
+.left-column .side-new:hover {
+  opacity: 0.5;
+}
+
+.left-column .side-new a {
+  line-height: 200px;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.left-column .side-new p {
+  line-height: 200px;
+  color: white;
+}
+
+.left-column .side-cart {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.left-column .side-cart p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.left-column .side-cart .cart-button {
+  margin-top: 7px;
+  text-align: center;
+}
+
+.left-column .side-cart .cart-button i {
+  background-color: gray;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
 .left-column a {
   color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.left-column a:hover {
+  color: lightgray;
+}
+
+.left-column ul {
+  margin-top: 15px;
+  padding-left: 16px;
 }
 
 .left-column li {
