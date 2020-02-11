@@ -22,8 +22,13 @@ a {
 }
 
 .header__box--logo {
+  margin: 0 80px;
   font-size: 40px;
   line-height: 120px;
+}
+
+.header__box--category {
+  margin-right: 80px;
 }
 
 .header a {
@@ -60,6 +65,29 @@ a {
   width: 1000px;
   height: 44px;
   margin: 0 auto;
+  position: relative;
+}
+
+#slider-controller__button ul {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#slider-controller__button ul .chevron {
+  border-right: 1px solid white;
+}
+
+#slider-controller__button ul li {
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 44px;
+  width: 44px;
+  text-align: center;
 }
 
 .main {
@@ -177,7 +205,7 @@ a {
 .lower-bunner {
   width: 100%;
   margin: 50px 0;
-  padding: 55px;
+  padding: 55px 0;
   border-top: 1px solid black;
 }
 

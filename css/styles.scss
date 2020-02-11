@@ -19,8 +19,12 @@ a{
     height: 120px;
     margin: 0 auto;
     &--logo{
+      margin: 0 80px;
       font-size: 40px;
       line-height: 120px;
+    }
+    &--category{
+      margin-right: 80px;
     }
   }
   a{
@@ -52,6 +56,24 @@ a{
     width: 1000px;
     height: 44px;
     margin: 0 auto;
+    position: relative;
+    ul{
+      position: absolute;
+      right: 0;
+      display: flex;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      .chevron{
+        border-right: 1px solid white;
+      }
+      li{
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 44px;
+        width: 44px;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -151,7 +173,7 @@ a{
 .lower-bunner{
   width: 100%;
   margin: 50px 0;
-  padding: 55px;
+  padding: 55px 0;
   border-top: 1px solid black;
   &__box{
     margin: 0 auto;
