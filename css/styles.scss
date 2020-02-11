@@ -51,6 +51,33 @@ a{
       }
     }
   }
+  .blandbox{
+    display: flex;
+  }
+  .bland{
+    position: relative;
+    &__dropdown{
+      display: none;
+      &--box{
+        display: flex;
+        position: absolute;
+        background: black;
+        line-height: 1.5;
+        padding: 15px;
+        top: 75px;
+        left: -370px;
+        ul{
+          width: 170px;
+        }
+        a{
+          font-size: 12px;
+          &:hover{
+            color: lightgrey;
+          }
+        }
+      }
+    }
+  }
   a{
     color: white;
   }
