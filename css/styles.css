@@ -31,19 +31,43 @@ a {
   margin-right: 80px;
 }
 
-.header a {
-  color: white;
-}
-
-.header ul {
+.header .dropdown {
   line-height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.header .category {
+  position: relative;
+}
+
+.header .category__dropdown {
+  position: absolute;
+  display: none;
+  line-height: 1.5;
+  bottom: 100;
+  background-color: black;
+  padding: 20px;
+  width: 120px;
+  top: 70px;
+  left: -17px;
+}
+
+.header .category__dropdown a {
+  color: white;
+}
+
+.header .category__dropdown a:hover {
+  color: lightgrey;
+}
+
+.header a {
+  color: white;
+}
+
 .header li {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .header form {

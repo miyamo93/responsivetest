@@ -27,15 +27,35 @@ a{
       margin-right: 80px;
     }
   }
-  a{
-    color: white;
-  }
-  ul{
+  .dropdown{
     line-height: 120px;
     display: flex;
   }
+  .category{
+    position: relative;
+    &__dropdown{
+      position: absolute;
+      display: none;
+      line-height: 1.5;
+      bottom: 100;
+      background-color: black;
+      padding: 20px;
+      width: 120px;
+      top: 70px;
+      left: -17px;
+      a{
+        color: white;
+        &:hover{
+          color: lightgrey;
+        }
+      }
+    }
+  }
+  a{
+    color: white;
+  }
   li{
-    margin-right:8px;
+    margin-right:10px;
   }
   form{
     line-height: 120px;

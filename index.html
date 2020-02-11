@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/reset.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrappar">
@@ -18,15 +19,28 @@
           <p><a href="">E.S.P.</a></p>
         </div>
         <div class="header__box--category">
-          <ul>
+          <ul class="dropdown">
             <li><a href="">new arrival</a></li>
-            <li id="category"><a href="">category</a></li>
-            <li id="bland"><a href="">bland</a></li>
+            <li id="drop", class="category"><a href="">category</a>
+              <ul class="category__dropdown">
+                <li>- <a href="">t-shirt</a></li>
+                <li>- <a href="">shirt</a></li>
+                <li>- <a href="">cut</a></li>
+                <li>- <a href="">knit</a></li>
+                <li>- <a href="">pants</a></li>
+                <li>- <a href="">jaket</a></li>
+                <li>- <a href="">head wear</a></li>
+                <li>- <a href="">shores</a></li>
+                <li>- <a href="">bag</a></li>
+                <li>- <a href="">others</a></li>
+              </ul>
+            </li>
+            <li id="drop"><a href="">bland</a></li>
             <li><a href="">shop</a></li>
             <li><a href="">insta</a></li>
           </ul>
         </div>
-        <ul>
+        <ul class="dropdown">
           <li><a href=""><i class="fas fa-user"></i></a></li>
           <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
           <li><a href=""><i class="fas fa-question"></i></a></li>
@@ -210,5 +224,14 @@
       </div>
     </div>
   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  $(function(){
+    $('.category').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+  });
+</script>
 </body>
 </html>
