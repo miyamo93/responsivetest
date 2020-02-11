@@ -7,8 +7,8 @@ $(function(){
 });
 $(function(){
   $('.bland').hover(function(){
-      $(".bland__dropdown:not(:animated)", this).slideDown();
+      $("ul:not(:animated)", this).slideDown();
   }, function(){
-      $(".bland__dropdown",this).slideUp();
+      $("ul",this).slideUp();
   });
 });
