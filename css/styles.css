@@ -21,8 +21,12 @@ a {
   margin: 0 auto;
 }
 
+.header__box a:hover {
+  color: lightgray;
+}
+
 .header__box--logo {
-  margin: 0 80px;
+  margin-right: 50px;
   font-size: 40px;
   line-height: 120px;
 }
@@ -52,6 +56,7 @@ a {
   width: 120px;
   top: 70px;
   left: -17px;
+  z-index: 80;
 }
 
 .header .category__dropdown a {
@@ -77,6 +82,7 @@ a {
 }
 
 .header .bland__dropdown--box {
+  z-index: 60;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +111,7 @@ a {
 }
 
 .header li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .header form {
@@ -150,6 +156,25 @@ a {
   line-height: 44px;
   width: 44px;
   text-align: center;
+}
+
+#slider-controller__button ul li:hover {
+  opacity: 0.5;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-next {
+  right: 20px;
+  z-index: 50;
+}
+
+.slider .slick-prev {
+  left: 15px;
+  z-index: 51;
 }
 
 .main {
@@ -223,8 +248,6 @@ a {
 
 .left-column a {
   color: black;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 
 .left-column a:hover {
