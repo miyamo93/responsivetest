@@ -30,11 +30,21 @@ a{
     }
     &--category{
       margin-right: 80px;
+      li{
+        margin-right: 40px;
+      }
     }
   }
   .dropdown{
     line-height: 120px;
     display: flex;
+    &__icon{
+      display: flex;
+      line-height: 120px;
+      li{
+        margin-right: 10px;
+      }
+    }
   }
   .category{
     position: relative;
@@ -49,6 +59,7 @@ a{
       top: 70px;
       left: -17px;
       z-index: 80;
+      font-size:13px ;
       a{
         color: white;
         &:hover{
@@ -87,9 +98,6 @@ a{
   }
   a{
     color: white;
-  }
-  li{
-    margin-right:20px;
   }
   form{
     line-height: 120px;

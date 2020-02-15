@@ -35,11 +35,26 @@ a {
   margin-right: 80px;
 }
 
+.header__box--category li {
+  margin-right: 40px;
+}
+
 .header .dropdown {
   line-height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header .dropdown__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 120px;
+}
+
+.header .dropdown__icon li {
+  margin-right: 10px;
 }
 
 .header .category {
@@ -57,6 +72,7 @@ a {
   top: 70px;
   left: -17px;
   z-index: 80;
+  font-size: 13px;
 }
 
 .header .category__dropdown a {
@@ -108,10 +124,6 @@ a {
 
 .header a {
   color: white;
-}
-
-.header li {
-  margin-right: 20px;
 }
 
 .header form {
