@@ -6,7 +6,112 @@ a{
 }
 
 
+.image-box{
+  position: relative;
+  &__1{
+    
+  }
+  &__2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
 
+
+
+/* btn */
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn01 {
+  position: relative;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #333;
+  overflow: hidden;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  &:hover {
+    color: #333;
+    border-color: #333;
+
+    &::after {
+      top: 0;
+      background-color: #fff;
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+
+/* btn */
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button{
+  position: relative;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #333;
+  overflow: hidden;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  &:hover {
+    color: #069;
+    border-color: #069;
+
+    &::after {
+      top: 0;
+      background-color: #fff;
+    }
+  }
+}
 // ヘッダー
 
 .header{
@@ -161,6 +266,9 @@ a{
 
 .main{
   width: 100%;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s;
   &__box{
     width: 1000px;
     margin: 0 auto;
@@ -288,3 +396,53 @@ a{
   }
 }
 
+
+#nav2 {
+  font-size: 100%;
+  font-weight: bold;
+  list-style: none;
+
+  li {
+    margin-bottom: 0.8em;
+
+    a {
+      background-position: 31px center;
+      background-repeat: no-repeat;
+      color: #333333;
+      display: block;
+      height: 64px;
+      line-height: 64px;
+      padding-left: 100px;
+      position: fixed;
+      text-decoration: none;
+
+      &:hover {
+        color: #FF9900;
+      }
+    }
+  }
+}
+
+.twitter {
+  background-image: url("../images/twitter.png");
+  top: 20px;
+  right: -132px;
+}
+
+.facebook {
+  background-image: url("../images/facebook.png");
+  top: 100px;
+  right: -148px;
+}
+
+.youtube {
+  background-image: url("../images/youtube.png");
+  top: 180px;
+  right: -137px;
+}
+
+.rss {
+  background-image: url("../images/rss.png");
+  top: 260px;
+  right: -86px;
+}
