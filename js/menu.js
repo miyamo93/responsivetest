@@ -44,4 +44,15 @@ $(function(){
       }
     );
   });
+  $(function(){
+    var hash = location.hash;
+    // 本番では↓を削除
+    hash = "tab1";
+    
+    $('#'+hash).next('.target').addClass('open');
+    $('.target:not(.open)').hide();
+    $('.accordion').on('click', function(){
+        $(this).next('.target').slideToggle();
+    });
+  });
 });
