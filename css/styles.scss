@@ -446,3 +446,40 @@ a {
   top: 260px;
   right: -86px;
 }
+
+
+.checkbox{
+  &__input{
+    display: none;
+    &:checked + .checkbox__parts{
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #d01137;
+        border-right: 3px solid #d01137;
+      }
+    }
+  }
+  &__parts{
+    padding-left: 20px;
+    position:relative;
+    margin-right: 20px;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+  }
+}
